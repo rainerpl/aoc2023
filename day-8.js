@@ -100,6 +100,7 @@ const values = individualPathsSorted.map((p) => {
 let killSwitch = 400000000;
 let largestLength = values[ values.length - 1].len;
 let currentItteration = largestLength;
+// May the force be with you....brute force I mean
 while (killSwitch > 0) {
     killSwitch--;
     const invalidLengths = values.filter(({len}) => {
